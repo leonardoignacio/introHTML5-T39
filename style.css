@@ -6,6 +6,7 @@
 
 body {
     background-color: yellow;
+    min-width: 560px;
     font-family:sans-serif, Helvetica;
     line-height: 1.5;
     font-weight: 500;
@@ -89,7 +90,7 @@ nav a:hover {
     color: #d1cfcf;
 }
 
-div {
+.boxConteudo {
     max-width: 90%;
     min-height: 350px;
     margin: 30px auto;
@@ -108,4 +109,23 @@ p {
     text-shadow:0 2px 2px rgba(153, 130, 178, 0.77);;
     margin: 0 20px 5px;
     padding: 0 20px;
+}
+
+.boxVideo {
+    width: 90%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(min(100%, 560px), 1fr));
+    gap: 20px;
+}
+
+.boxVideo iframe{
+    display: flexbox;
+    width: 100%;
+    max-width: 560px;
+    aspect-ratio: 16 / 9;
+    height: auto;
+    justify-self: center;
+    margin: 0 auto 20px;
+    border: 0;
 }
