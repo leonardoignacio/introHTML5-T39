@@ -30,7 +30,7 @@ h1 {
     padding: 0 20px;
 }
 
-h2 {
+h2, h3 {
     font-size: 1.8rem;
     color: orangered;
     margin: 0 20px 5px 20px;
@@ -41,8 +41,13 @@ ul{
     margin: 0 20px 5px;
     padding: 0 20px;
     font-weight: 500;
+    line-height:2.5em;
     text-shadow:0 2px 2px rgba(153, 130, 178, 0.77);
     text-align: justify;
+}
+li{
+    font-size: 1.5rem;
+    font-weight: 500;
 }
 
 a {
@@ -113,6 +118,8 @@ p {
 
 .boxVideo {
     width: 90%;
+    background-color: #6262645a;
+    padding: 50px;
     margin: 30px auto;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(min(100%, 560px), 1fr));
