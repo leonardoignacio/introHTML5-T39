@@ -144,17 +144,24 @@ p {
 
 .footer-grid > section {
   padding: 1.5rem;
-  background: rgb(255 255 255 / 55%);
+  background: rgba(209, 205, 205, 0.419);
   border: 1px solid rgb(148 163 184 / 25%);
   border-radius: 12px;
-  box-shadow: 0 4px 15px rgb(15 23 42 / 6%);
+  box-shadow: 0 4px 15px rgba(36, 48, 76, 0.595);
   backdrop-filter: blur(8px);
+}
+
+.footer h2 {
+    color:rgba(20, 36, 117, 0.848);
+    margin: 15px;
+    font-size: 2rem;
+    font-weight: 600;
 }
 
 .footer h3 {
   margin: 0 0 .75rem;
   color: #1e3a5fd4;
-  font-size: 1rem;
+  font-size: 1.5rem;
   font-weight: 600;
 }
 
