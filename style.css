@@ -104,7 +104,7 @@ nav a:hover {
     background: rgba(236, 239, 242, 0.531);
     border-radius: 16px;
     backdrop-filter: blur(15px);
-    box-shadow:0 16px 36px rgba(0, 0, 0, 0.15);
+    box-shadow:0 16px 36px rgba(0, 0, 0, 0.302);
 }
 
 p {
