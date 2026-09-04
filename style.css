@@ -23,11 +23,11 @@ body {
 }
 
 h1 {
-    font-size: 2.3rem;
-    color: blue;
-    text-align: center;
-    margin: 0 20px 5px;
-    padding: 0 20px;
+    font-size: 3.3rem;
+    color: rgba(32, 66, 141, 0.828);
+    text-align:center;
+    margin: 5px 20px 5px 20px;
+    padding: 40px 40px ;
 }
 
 h2, h3 {
@@ -58,7 +58,7 @@ a {
     transition: 0.03s;
 }
 a:hover{
-    color:rgb(229, 229, 252); 
+    color:rgb(69, 69, 147); 
     font-size: 30px;
     font-weight: 800;
 }
@@ -181,6 +181,7 @@ p {
 .footer a {
   color: #142475c9;
   text-decoration: none;
+  font-size: 1rem;
 }
 
 .footer a:hover {
@@ -191,5 +192,18 @@ p {
 .footer small {
   color: #94a3b8cc;
 }
-
-
+/* Estado inicial dos cartões antes de aparecerem */
+.content-card{
+    opacity: 0;
+    transform: translateY(40px); /* Começa mais para baixo */
+    transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+/* Classe que o JavaScript vai adicionar para mostrar os cartões */
+.content-card.visivel {
+    opacity: 1;
+    transform: translateY(0);
+}
+.content-card.reverse {
+    opacity: 1;
+    transform: translateY(-40);
+}
